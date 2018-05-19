@@ -8,7 +8,7 @@
       <!-- SIDEBAR -->
       <div class="sidebar">
         <!-- Css-grid -->
-        <h3>CSS-Grid</h3>
+        <h3>CSS-Grid Experiments</h3>
         <ul>
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/responsivecards">Responsive Cards</router-link></li>
@@ -16,11 +16,14 @@
           
         </ul>
 
+        <!-- Vuejs -->
+        <h3>Vuejs Experiments</h3>
+        <ul>
+          <li><router-link :to="{name: 'Coins'}">Latest Crypto Prices</router-link></li>
+          
+          
+        </ul>
 
-
-        <!-- Axios -->
-
-        <!-- Vuex -->
 
 
       </div>

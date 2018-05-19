@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from '../components/Home'
 import ResponsiveCards from '../components/ResponsiveCards'
 import Flexgrid from '../components/Flexgrid'
+import Coins from '../components/Coins'
+import Coindetail from '../components/Coindetail'
 
 Vue.use(Router)
 
@@ -21,6 +23,16 @@ export default new Router({
       path: '/flexgrid',
       name: 'Flexgrid',
       component: Flexgrid
+    },
+    {
+      path: '/coins',
+      name: 'Coins',
+      component: Coins
+    },
+    {
+      path: '/coindetail/:id',
+      name: 'Coindetail',
+      component: Coindetail
     }
     
   ]
