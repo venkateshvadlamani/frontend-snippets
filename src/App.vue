@@ -20,6 +20,13 @@
         <h3>Vuejs Experiments</h3>
         <ul>
           <li><router-link :to="{name: 'Coins'}">Latest Crypto Prices</router-link></li>
+          <hr>
+          directives
+          <hr>
+          navbar
+          <hr>
+          JWT and Oauth
+          <hr>
           
           
         </ul>
