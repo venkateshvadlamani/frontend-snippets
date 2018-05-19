@@ -11,8 +11,9 @@
         <h3>CSS-Grid</h3>
         <ul>
           <li><router-link to="/">Home</router-link></li>
-          <li><router-link :to="{name: 'About'}">About</router-link></li>
           <li><router-link to="/responsivecards">Responsive Cards</router-link></li>
+          <li><router-link :to="{name: 'Flexgrid'}">Flexbox grid nested</router-link></li>
+          
         </ul>
 
 
@@ -46,10 +47,10 @@ export default {
 </script>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 25px;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 html {
@@ -66,7 +67,7 @@ h3 {
 .container {
   display: grid;
   grid-template-columns: 2fr 7fr;
-  grid-row: 60px auto;
+  grid-template-rows: 25px auto;
 }
 
 .navbar {
@@ -92,7 +93,6 @@ h3 {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 

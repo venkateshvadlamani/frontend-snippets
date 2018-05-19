@@ -1,6 +1,4 @@
 <template>
-  <div class="responsivecards">
-
   <main>
     <article>
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Paleo_food.jpg">
@@ -60,7 +58,6 @@
     </article>        
   </main>
 
-  </div>
 </template>
 
 <script>
@@ -75,7 +72,21 @@ export default {
 </script>
 
 <style>
-.responsivecards {
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
 
+article {
+  margin: 0.2rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+img {
+  width: 100%;
 }
 </style>
+
