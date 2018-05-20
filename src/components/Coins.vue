@@ -1,6 +1,5 @@
 <template>
   <div class="coins">
-    <h1>{{ msg }}</h1>
     <ul >      
         <li v-for="coin in coins">
           <router-link :to="{name:'Coindetail', params:{id:coin.id}}">
@@ -40,3 +39,10 @@ import axios from 'axios'
     }
   }
 </script>
+
+<style>
+.coins{
+  font-size: 24px;
+  border: 2px solid grey;
+}
+</style>
